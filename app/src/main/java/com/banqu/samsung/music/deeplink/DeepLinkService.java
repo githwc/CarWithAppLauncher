@@ -37,7 +37,6 @@ public class DeepLinkService extends AppCompatActivity {
         auto_godmode = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("godmode_auto", false);
         auto_ta = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("touchassistant_auto", false);
         auto_noti = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("notification_switch_auto", false);
-        auto_fs = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("fs_auto", false);
 
         if (auto_godmode) {
             if (NavBar.getInstance() == null) {
@@ -73,10 +72,6 @@ public class DeepLinkService extends AppCompatActivity {
             {
                 FakeStart.Start(this,pkg);
             }
-        }
-        if(auto_fs)
-        {
-            Common.immersive_on(getApplicationContext());
         }
 
 

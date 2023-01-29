@@ -31,13 +31,6 @@
             app:key="oneui_shortcut_app"
             app:summary="@string/oneui_shortcut_app_summary"
             app:title="@string/oneui_shortcut_app_title" />
-        <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/music"
-            app:allowDividerAbove="true"
-            app:allowDividerBelow="false"
-            app:key="oneui_shortcut_music"
-            app:summary="@string/oneui_shortcut_music_summary"
-            app:title="@string/oneui_shortcut_music_title" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -59,13 +52,6 @@
             app:summary="@string/oneui_shortcut_fullscreen_summary"
             app:title="@string/oneui_shortcut_fullscreen_title" />
         <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/side_bar_fill"
-            app:allowDividerAbove="true"
-            app:allowDividerBelow="true"
-            app:key="oneui_shortcut_navbar"
-            app:summary="@string/oneui_shortcut_navbar_summary"
-            app:title="@string/oneui_shortcut_navbar_title" />
-        <com.banqu.samsung.music.ui.ui.OneUIPreference
             android:icon="@drawable/message_3_fill"
             app:allowDividerAbove="true"
             app:allowDividerBelow="true"
@@ -79,18 +65,6 @@
             app:key="oneui_shortcut_launch"
             app:summary="@string/oneui_shortcut_launch_summary"
             app:title="@string/oneui_shortcut_launch_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/oneui_shortcut_settings_exp"
-        app:iconSpaceReserved="false">
-        <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/flask_fill"
-            app:allowDividerAbove="false"
-            app:allowDividerBelow="false"
-            app:key="oneui_shortcut_lab"
-            app:summary="@string/oneui_shortcut_lab_summary"
-            app:title="@string/oneui_shortcut_lab_title" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -8,20 +8,20 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('C:\\Users\\Yichao\\test.jks')
-            storePassword 'testtest'
-            keyAlias 'key0-testtest'
-            keyPassword 'testtest'
+            storeFile file('D:\\SOFTWARE\\DEV\\key\\debug.jks')
+            storePassword 'debug.'
+            keyAlias 'debug'
+            keyPassword 'debug.'
         }
     }
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.banqu.samsung.music"
+        applicationId "com.sinyee.babybus.story"
         minSdk 31
         targetSdk 31
-        versionCode 12300000
-        versionName "1.2.3"
+        versionCode 9999
+        versionName "99.9.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {

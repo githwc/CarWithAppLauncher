@@ -14,14 +14,6 @@
             android:title="随车联助手启动"
             app:iconSpaceReserved="false"
             app:summary="随车联助手启动：启动车联助手主界面时，自动启动小白点助手。" />
-        <com.banqu.samsung.music.ui.ui.OneUISwitchPreference
-            app:allowDividerAbove="true"
-            app:allowDividerBelow="false"
-            android:defaultValue="false"
-            android:key="touchassistant_auto"
-            android:title="随Carlife启动"
-            app:iconSpaceReserved="false"
-            app:summary="随Carlife启动：启动车机连接Carlife时，自动启动小白点助手。权限要求：无障碍 版本要求：车联服务 1.5以上" />
     </PreferenceCategory>
     <PreferenceCategory
         android:title="显示模式"

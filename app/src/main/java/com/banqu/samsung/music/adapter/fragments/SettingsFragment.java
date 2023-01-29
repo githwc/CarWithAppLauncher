@@ -25,20 +25,14 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
         ui.setOnPreferenceClickListener(this);
         Preference app = findPreference("oneui_shortcut_app");
         app.setOnPreferenceClickListener(this);
-        Preference music = findPreference("oneui_shortcut_music");
-        music.setOnPreferenceClickListener(this);
         Preference floath = findPreference("oneui_shortcut_float");
         floath.setOnPreferenceClickListener(this);
         Preference fullscreen = findPreference("oneui_shortcut_fullscreen");
         fullscreen.setOnPreferenceClickListener(this);
-        Preference navbar = findPreference("oneui_shortcut_navbar");
-        navbar.setOnPreferenceClickListener(this);
         Preference notification = findPreference("oneui_shortcut_notification");
         notification.setOnPreferenceClickListener(this);
         Preference launch = findPreference("oneui_shortcut_launch");
         launch.setOnPreferenceClickListener(this);
-        Preference lab = findPreference("oneui_shortcut_lab");
-        lab.setOnPreferenceClickListener(this);
 
 
     }

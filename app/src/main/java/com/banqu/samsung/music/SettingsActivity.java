@@ -560,7 +560,6 @@ public class SettingsActivity extends AppCompatActivity implements
 
     public static class SettingsTaFragment extends PreferenceFragmentCompat implements Preference.OnPreferenceChangeListener {
         private SwitchPreference pref_touchassistant;
-        private SwitchPreference pref_touchassistant_auto;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -568,9 +567,6 @@ public class SettingsActivity extends AppCompatActivity implements
 
             pref_touchassistant = findPreference("touchassistant");
             pref_touchassistant.setOnPreferenceChangeListener(this);
-
-            pref_touchassistant_auto = findPreference("touchassistant_auto");
-            pref_touchassistant_auto.setOnPreferenceChangeListener(this);
 
             Preference pref_touchassistant1 = findPreference("ta_dot_autohide_time");
             pref_touchassistant1.setOnPreferenceChangeListener(this);
@@ -619,9 +615,6 @@ public class SettingsActivity extends AppCompatActivity implements
                         if (!Common.checkFloatPermission(requireContext())) {
                             Common.requestFloatPermission(requireContext());
                             return false;
-                        }
-                        if (pref_touchassistant_auto.isChecked()) {
-                            pref_touchassistant_auto.setChecked(false);
                         }
                     }
                     return true;
@@ -766,8 +759,6 @@ public class SettingsActivity extends AppCompatActivity implements
 
             pref_touchassistant = findPreference("notification_switch");
             pref_touchassistant.setOnPreferenceChangeListener(this);
-            pref_touchassistant_auto = findPreference("notification_switch_auto");
-            pref_touchassistant_auto.setOnPreferenceChangeListener(this);
 
             Preference pref_touchassistant1 = findPreference("notification_display_seconds");
             pref_touchassistant1.setOnPreferenceChangeListener(this);
@@ -856,8 +847,6 @@ public class SettingsActivity extends AppCompatActivity implements
 
             god = findPreference("godmode");
             god.setOnPreferenceChangeListener(this);
-            god_auto = findPreference("godmode_auto");
-            god_auto.setOnPreferenceChangeListener(this);
 
             Preference god1 = findPreference("godmodeiconsize");
             god1.setOnPreferenceChangeListener(this);
@@ -1192,8 +1181,6 @@ public class SettingsActivity extends AppCompatActivity implements
         @Override
         public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
             setPreferencesFromResource(R.xml.root_fs_preferences, rootKey);
-            fs_auto = findPreference("fs_auto");
-            fs_auto.setOnPreferenceChangeListener(this);
             fs = findPreference("fs");
             fs.setOnPreferenceChangeListener(this);
         }

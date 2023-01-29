@@ -78,9 +78,6 @@ public class IntroducttoryActivity extends AppCompatActivity {
         View pageB = getView(R.layout.introductory_b);
         viewList.add(pageB);
 
-        View pageC = getView(R.layout.introductory_c);
-        viewList.add(pageC);
-
         View pageE = getView(R.layout.introductory_e);
         viewList.add(pageE);
 
@@ -108,48 +105,22 @@ public class IntroducttoryActivity extends AppCompatActivity {
             }
         });
 
-        music= pageC.findViewById(R.id.setup_music);
-        music.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"请开启音乐镜像服务并打开权限！完成后返回",Toast.LENGTH_LONG).show();
-
-                if(!NotificationListener.isEnabled(getApplicationContext()))
-                {
-                    startActivity(new Intent(
-                            "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"));
-                }
-                //                Intent i = new Intent();
-//                i.setClassName(getPackageName(), MyFragmentDisplayer.class.getName());
-//                i.putExtra("className", SettingsActivity.SettingsMusicFragment.class.getName());
-//                startActivity(i);
-            }
-        });
-
         Button done = pageD.findViewById(R.id.setup_done);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(!Common.isIgnoringBatteryOptimizations(getApplicationContext()))
-                {
-                    Common.requestIgnoreBatteryOptimizations(IntroducttoryActivity.this);
-                }
-                else
-                {
-                    SharedPreferences.Editor editor= PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
-                    editor.putBoolean("FirstStartFlag",false);
-                    editor.apply();
-                    Toast.makeText(getApplicationContext(),"设置完成！可通过‘车机预览’查看并配置助手。",Toast.LENGTH_LONG).show();
+                SharedPreferences.Editor editor= PreferenceManager.getDefaultSharedPreferences(getApplicationContext()).edit();
+                editor.putBoolean("FirstStartFlag",false);
+                editor.apply();
+                Toast.makeText(getApplicationContext(),"设置完成！可通过‘车机预览’查看并配置助手。",Toast.LENGTH_LONG).show();
 
 
-                    Intent i = new Intent();
-                    i.setClassName(getPackageName(), OneUiHomeActivity.class.getName());
-                    startActivity(i);
+                Intent i = new Intent();
+                i.setClassName(getPackageName(), OneUiHomeActivity.class.getName());
+                startActivity(i);
 
-                    finish();
-                }
-
+                finish();
 
             }
         });

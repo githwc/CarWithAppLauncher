@@ -7,6 +7,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowInsetsController;
@@ -145,24 +146,18 @@ public class OneUiHomeActivity extends AppCompatActivity {
 
             Preference version = findPreference("layoutils");
 
-            if (Common.isInstalled(requireContext(), "com.samsung.android.carlink")) {
+            if (Common.isInstalled(requireContext(), "com.miui.carlink")) {
                 String versionName = Common.getCarlinkVersionName(getContext());
-                version.setTitle("车联服务：" + versionName);
+                version.setTitle("车联服务：" + versionName + "\r\n小米版");
             } else {
-                version.setTitle("抱歉，您当前的系统环境不支持三星Carlife定制版与车联助手插件！请检查系统更新，并升级国行最新系统，外版可刷带车联服务的第三方国行移植固件。感谢您的支持");
+                version.setTitle("抱歉，您当前的系统环境不支持小米CarWith与车联助手插件！请检查系统更新，并升级最新系统。感谢您的支持");
             }
-
-            Preference guide = findPreference("oneui_shortcut_instruction");
-            guide.setOnPreferenceClickListener(this);
 
             Preference preview = findPreference("oneui_shortcut_preview");
             preview.setOnPreferenceClickListener(this);
 
             Preference app = findPreference("oneui_shortcut_app");
             app.setOnPreferenceClickListener(this);
-
-            Preference music = findPreference("oneui_shortcut_music");
-            music.setOnPreferenceClickListener(this);
 
             Preference close = findPreference("oneui_shortcut_close");
             close.setOnPreferenceClickListener(this);
@@ -172,6 +167,9 @@ public class OneUiHomeActivity extends AppCompatActivity {
 
             Preference update = findPreference("oneui_shortcut_update");
             update.setOnPreferenceClickListener(this);
+
+            Preference project = findPreference("oneui_shortcut_project");
+            project.setOnPreferenceClickListener(this);
             AppAnnouncement.runUpdate(requireContext(), update);
         }
 
@@ -214,6 +212,13 @@ public class OneUiHomeActivity extends AppCompatActivity {
                     i5.setClassName(requireContext().getPackageName(), MyFragmentDisplayer.class.getName());
                     i5.putExtra("className", DonateFragment.class.getName());
                     startActivity(i5);
+                    break;
+                case "oneui_shortcut_project":
+                    Intent i6 = new Intent();
+                    String url = "https://github.com/XanderYe/CarWithAppLauncher/tree/carwith";
+                    i6.setAction("android.intent.action.VIEW");
+                    i6.setData(Uri.parse(url));
+                    startActivity(i6);
                     break;
             }
 

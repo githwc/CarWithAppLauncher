@@ -45,15 +45,8 @@
         app:iconSpaceReserved="false"
         app:title="快捷访问">
         <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/cursor"
-            app:allowDividerAbove="false"
-            app:allowDividerBelow="true"
-            app:key="oneui_shortcut_instruction"
-            app:summary="@string/oneui_shortcut_instruction_summary"
-            app:title="@string/oneui_shortcut_instruction_title" />
-        <com.banqu.samsung.music.ui.ui.OneUIPreference
             android:icon="@drawable/car_front"
-            app:allowDividerAbove="true"
+            app:allowDividerAbove="false"
             app:allowDividerBelow="true"
             app:key="oneui_shortcut_preview"
             app:summary="@string/oneui_shortcut_preview_summary"
@@ -65,13 +58,6 @@
             app:key="oneui_shortcut_app"
             app:summary="@string/oneui_shortcut_app_summary"
             app:title="@string/oneui_shortcut_app_title" />
-        <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/music"
-            app:allowDividerAbove="true"
-            app:allowDividerBelow="true"
-            app:key="oneui_shortcut_music"
-            app:summary="@string/oneui_shortcut_music_summary"
-            app:title="@string/oneui_shortcut_music_title" />
         <com.banqu.samsung.music.ui.ui.OneUIPreference
             android:icon="@drawable/arrow_counterclockwise"
             app:allowDividerAbove="true"
@@ -106,5 +92,12 @@
             app:key="oneui_shortcut_donation"
             app:summary="@string/oneui_shortcut_donation_summary"
             app:title="@string/oneui_shortcut_donation_title" />
+        <com.banqu.samsung.music.ui.ui.OneUIPreference
+            android:icon="@drawable/emoji_kiss"
+            app:allowDividerAbove="true"
+            app:allowDividerBelow="false"
+            app:key="oneui_shortcut_project"
+            app:summary="@string/oneui_shortcut_project_summary"
+            app:title="@string/oneui_shortcut_project_title" />
     </PreferenceCategory>
 </PreferenceScreen>

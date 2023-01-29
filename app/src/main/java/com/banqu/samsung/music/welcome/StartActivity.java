@@ -20,11 +20,11 @@ public class StartActivity extends AppCompatActivity {
         boolean is = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("FirstStartFlag", true);
         //判断是否为第一次打开软
         if (is) {
-            if (Common.isInstalled(getApplicationContext(), "com.samsung.android.carlink")) {
-                Toast.makeText(getApplicationContext(),"欢迎使用车联助手三星版",Toast.LENGTH_SHORT).show();
+            if (Common.isInstalled(getApplicationContext(), "com.miui.carlink")) {
+                Toast.makeText(getApplicationContext(),"欢迎使用车联助手小米版",Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(StartActivity.this, IntroducttoryActivity.class));
             } else {
-                Toast.makeText(this, "当前系统不支持三星Carlife定制版及车联助手插件！", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "当前系统不支持小米CarWith及车联助手插件！", Toast.LENGTH_LONG).show();
             }
         } else {
             //直接进入首页

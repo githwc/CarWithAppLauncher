@@ -293,7 +293,7 @@ public class Common {
     }
 
     public static String getCarlinkVersionName(Context context) {
-        return getVersionName(context, "com.samsung.android.carlink");
+        return getVersionName(context, "com.miui.carlink");
     }
 
     public static boolean isIgnoringBatteryOptimizations(Context context) {

@@ -16,7 +16,7 @@
         app:iconSpaceReserved="false"
         app:title="界面分区设置">
         <com.banqu.samsung.music.ui.ui.OneUIListPreference
-            android:defaultValue="music"
+            android:defaultValue="false"
             android:entries="@array/ui_plugin_entries"
             android:entryValues="@array/ui_plugin_values"
             android:key="areaA"

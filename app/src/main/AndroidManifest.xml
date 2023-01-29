@@ -24,7 +24,6 @@
             android:excludeFromRecents="false"
             android:exported="true"
             android:launchMode="singleTask"
-            android:screenOrientation="landscape"
             android:taskAffinity="com.banqu.music.CarUI">
             <intent-filter>
                 <action android:name="samsung.intent.action.carlink.kit" />
@@ -33,6 +32,11 @@
                 <action android:name="vivo.intent.action.carlink.kit" />
 
                 <category android:name="vivo.intent.category.carlink.kit" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ucar.intent.action.UCAR" />
+
+                <category android:name="com.ucar.intent.category.UCAR" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

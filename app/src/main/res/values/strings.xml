@@ -412,6 +412,8 @@
     <string name="oneui_shortcut_settings_summary">多样化的自定义设置</string>
     <string name="oneui_shortcut_donation_title">捐赠支持</string>
     <string name="oneui_shortcut_donation_summary">喜欢的话就捐赠以下噢</string>
+    <string name="oneui_shortcut_project_title">项目地址</string>
+    <string name="oneui_shortcut_project_summary">小米版项目地址</string>
     <string name="oneui_shortcut_settings_close">立即生效</string>
     <string name="oneui_shortcut_settings_basic">基础玩法</string>
     <string name="oneui_shortcut_carui_title">主界面</string>
@@ -431,4 +433,5 @@
     <string name="oneui_shortcut_settings_exp">实验测试</string>
     <string name="oneui_shortcut_lab_title">实验室功能</string>
     <string name="oneui_shortcut_lab_summary">更高级的功能不保证使用体验与Bug</string>
+    <string name="mi_version">小米版，项目地址点此</string>
 </resources>

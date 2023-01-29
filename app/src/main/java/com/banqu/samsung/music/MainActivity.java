@@ -362,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public static boolean is_empty_A(Context context) {
-        return PreferenceManager.getDefaultSharedPreferences(context).getString("areaA", "music").equals("false");
+        return PreferenceManager.getDefaultSharedPreferences(context).getString("areaA", "false").equals("false");
     }
 
     public static boolean is_empty_B(Context context) {
@@ -374,7 +374,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static boolean has_weidget(Context context) {
-        if (PreferenceManager.getDefaultSharedPreferences(context).getString("areaA", "music").equals("widget") ||
+        if (PreferenceManager.getDefaultSharedPreferences(context).getString("areaA", "false").equals("widget") ||
                 PreferenceManager.getDefaultSharedPreferences(context).getString("areaB", "app").equals("widget") ||
                 PreferenceManager.getDefaultSharedPreferences(context).getString("areaC", "false").equals("widget")) {
             return true;
