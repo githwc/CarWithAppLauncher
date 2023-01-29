@@ -93,7 +93,7 @@
             app:summary="@string/oneui_shortcut_donation_summary"
             app:title="@string/oneui_shortcut_donation_title" />
         <com.banqu.samsung.music.ui.ui.OneUIPreference
-            android:icon="@drawable/emoji_kiss"
+            android:icon="@drawable/cursor"
             app:allowDividerAbove="true"
             app:allowDividerBelow="false"
             app:key="oneui_shortcut_project"
