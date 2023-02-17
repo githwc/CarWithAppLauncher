@@ -19,6 +19,7 @@
         app:iconSpaceReserved="false">
         <com.banqu.samsung.music.ui.ui.OneUIPreference
             android:icon="@drawable/car_front"
+            app:isPreferenceVisible="false"
             app:allowDividerAbove="false"
             app:allowDividerBelow="true"
             app:key="oneui_shortcut_ui"

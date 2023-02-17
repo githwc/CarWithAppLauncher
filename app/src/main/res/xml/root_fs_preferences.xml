@@ -20,6 +20,6 @@
     <Preference
         android:layout="@layout/settings_illustration_layout"
         android:title="使用说明"
-        app:summary="操作adb的直接使用以下adb代码即可: pm grant com.banqu.samsung.music android.permission.WRITE_SECURE_SETTINGS" />
+        app:summary="操作adb的直接使用以下adb代码即可: pm grant com.sinyee.babybus.story android.permission.WRITE_SECURE_SETTINGS" />
 
 </PreferenceScreen>

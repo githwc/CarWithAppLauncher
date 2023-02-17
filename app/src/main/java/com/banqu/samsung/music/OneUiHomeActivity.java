@@ -170,7 +170,7 @@ public class OneUiHomeActivity extends AppCompatActivity {
 
             Preference project = findPreference("oneui_shortcut_project");
             project.setOnPreferenceClickListener(this);
-            AppAnnouncement.runUpdate(requireContext(), update);
+            // AppAnnouncement.runUpdate(requireContext(), update);
         }
 
         @Override
