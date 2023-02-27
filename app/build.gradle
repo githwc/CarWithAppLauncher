@@ -20,8 +20,8 @@ android {
         applicationId "com.sinyee.babybus.story"
         minSdk 31
         targetSdk 31
-        versionCode 12200000
-        versionName "2.0.1"
+        versionCode 12200002
+        versionName "2.0.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
