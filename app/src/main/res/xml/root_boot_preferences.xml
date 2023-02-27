@@ -3,6 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
+        android:title="横竖屏"
+        app:iconSpaceReserved="false">
+        <com.banqu.samsung.music.ui.ui.OneUISwitchPreference
+            app:allowDividerAbove="false"
+            app:allowDividerBelow="true"
+            android:defaultValue="false"
+            android:key="force_landscape"
+            android:title="强制横屏"
+            app:iconSpaceReserved="false"
+            app:summary="当你连接CarWith后界面异常时打开" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="前置启动"
         app:iconSpaceReserved="false">
         <com.banqu.samsung.music.ui.ui.OneUISwitchPreference
@@ -12,7 +25,7 @@
             android:key="exp_autostart"
             android:title="前置启动"
             app:iconSpaceReserved="false"
-            app:summary="在连接Calife时自动启动指定应用。要求：车联服务1.5以上" />
+            app:summary="在连接CarWith时自动启动指定应用。要求：车联服务1.5以上" />
         <com.banqu.samsung.music.ui.ui.OneUIListPreference
             app:allowDividerAbove="true"
             app:allowDividerBelow="false"
