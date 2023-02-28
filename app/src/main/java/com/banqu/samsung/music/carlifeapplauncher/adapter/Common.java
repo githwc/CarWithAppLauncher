@@ -460,7 +460,7 @@ public class Common {
             for (String pkg : get_adapt_list(context)) {
                 code += pkg + ",";
             }
-            code += "com.baidu.carlife,";
+            code += "com.miui.carlink,";
             code += context.getPackageName();
             Settings.Global.putString(context.getContentResolver(), "policy_control", "immersive.navigation=" + code);
         } catch (Exception e) {

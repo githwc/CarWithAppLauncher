@@ -1148,10 +1148,6 @@ public class SettingsActivity extends AppCompatActivity implements
                             Toast.makeText(requireContext(), "请参照说明授权后，方可开启", Toast.LENGTH_LONG).show();
                             return false;
                         }
-                        if(fs_auto.isChecked())
-                        {
-                            fs_auto.setChecked(false);
-                        }
                     }
                     return true;
                 case "fs_auto":
