@@ -259,12 +259,7 @@ public class Common {
     }
 
     public static Boolean checkFloatPermission(Context context) {
-        AppOpsManager appOpsMgr = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
-        if (appOpsMgr == null)
-            return false;
-        int mode = appOpsMgr.checkOpNoThrow("android:system_alert_window", android.os.Process.myUid(), context
-                .getPackageName());
-        return mode == AppOpsManager.MODE_ALLOWED || mode == AppOpsManager.MODE_IGNORED;
+        return Settings.canDrawOverlays(context);
     }
 
     public static void requestFloatPermission(Context context) {
