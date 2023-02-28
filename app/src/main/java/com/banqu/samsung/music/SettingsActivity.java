@@ -799,9 +799,9 @@ public class SettingsActivity extends AppCompatActivity implements
                                     "android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"));
                             return false;
                         }
-                        if (pref_touchassistant_auto.isChecked()) {
+                        /*if (pref_touchassistant_auto.isChecked()) {
                             pref_touchassistant_auto.setChecked(false);
-                        }
+                        }*/
                     }
                     return true;
                 case "notification_switch_auto":
